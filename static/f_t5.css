@@ -1,0 +1,97 @@
+body {
+    background: rgba(107, 107, 71, 1) /* R, G, B, непрозрачность */
+}
+h1{
+    text-indent: 25px;      /* красная строка */
+    color: #FFCC99;
+    font-family:  Arial;
+    text-align: center
+}
+
+h2{
+    text-indent: 25px;      /* красная строка */
+    color: #FFCC99;
+    font-family:  Arial;
+    text-align: center
+}
+
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+
+
+.container {
+    margin: 0 auto; /*внешний отступ на всех четырёх сторонах элемента*/
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    width: 20%;
+    padding: 30px; /* Создает внутренний отступ*/
+    text-align: justify;
+    float: center;
+}
+
+.col-25 {
+    float: left;
+    width: 30%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 60%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row{
+    content: "";
+    display: table; /*превращает элемент в таблицу  display: table-row (строка) и display: table-cell (ячейка). */
+    clear: both; /* отменяет обтекание элемента одновременно с правого и левого края.*/
+}
+/*--------------------------------------------------------------------------------*/
+.header img{
+    width: 50px;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #0b1622;
+  padding: 10px 20px;
+}
+
+.header a {
+  float: left;
+  color: rgb(255, 255, 255); /* цвет текста */
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 0px;
+  border-radius: 0px;
+}
+
+.header-right {
+  float: right;
+  display: flex;
+  align-items: center;
+}
+button{
+  padding: 10px 30px;
+  border-radius: 50px;
+}
+.button-link {
+  display: inline-block; /*: Позволяет установить ширину и высоту элемента, а также отображать его в строке*/
+  padding: 5px 10px; /* Создает внутренний отступ*/
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none; /* Убирает подчеркивание, характерное для ссылок.*/
+  background-color: #4CAF50; /*Задают визуальное оформление кнопки.*/
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

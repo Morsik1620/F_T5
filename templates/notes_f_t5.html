@@ -1,0 +1,36 @@
+{% extends 'index_f_t5.html' %} <!-- указываем базовый файл -->
+ {% block notes %}
+<h1>Дневник программиста</h1>
+<p>
+<h2>Введите данные</h2>
+
+<form method="post">
+    Заголовок записи: <input type="text" name="title" required><br>
+    Подзаголовок: <input type="text" name="subtitle" required><br>
+    Текст записи: <input type="text" name="text" required><br>
+    <button type="submit">Добавить</button>
+</form>
+
+
+<!-- создаем таблицу -->
+<h3>Результаты</h3>
+<table border="1">
+    <tr>
+        <th>ID:</th> 
+        <th>Заголовок записи:</th>
+        <th>Подзаголовок:</th>
+        <th>Текст записи: </th>
+    </tr>
+    {% for row in notes2 %}
+    <tr>
+        <td>{{row.id}}</td>
+        <td>{{row.title}}</td>
+        <td>{{row.subtitle}}</td>
+        <td>{{row.text}}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+</p>
+ {% endblock %}

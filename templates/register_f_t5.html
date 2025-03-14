@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="../static/css/f_t5.css">
+</head>
+
+<header>
+    <div class="header">
+        <div class="header-left">
+            <a href="/">Домашняя страница</a>
+        </div>
+        <div class="header-right">
+            <a href="/login">Логин</a>
+        </div>
+    </div>
+</header>
+<h2>Введите данные register_f_t5</h2>
+<!---
+<form method="post">
+    Логин: <input type="text" name="username" required><br>
+    Email: <input type="text" name="email" required><br>
+    Пароль: <input type="text" name="password" required><br>
+    <button type="submit">Зарегистрироваться</button>
+</form>
+-->
+
+<form method="POST">
+
+ <div class="container">
+
+    <div class="row">
+      <div class="col-25">
+        <label for="username">Логин</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="username" name="username" placeholder="Твой логин...">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="mail">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="mail" name="mail" placeholder="Твоя почта..">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="password">Пароль</label>
+      </div>
+      <div class="col-75">
+        <input type="password" id="password" name="password" placeholder="Твой пароль..">
+      </div>
+    </div>
+
+    <div class="row">
+      <input type="submit" value="Зарегистрироваться">
+    </div>
+ </div>
+</form>
+</html>

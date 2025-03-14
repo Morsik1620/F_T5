@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title> Document </title>
+    <link rel="stylesheet" href="../static/css/f_t5.css">
+</head>
+ <header>
+    <div class="header">
+        <a href="#" class="logo"><img src="../static/img/book.png" alt="CSS Header"></a>
+        <a href="/">Домашняя страница</a>
+        <a href="/dp">Дневник программиста</a>
+        <a href="/home">Авторизация</a>
+      <div class="header-right">
+        <a class="active" href="/home">Войти</a>
+        <a class="active" href="/register">Регистрация</a>
+        <a class="active" href="/login">Логин</a>
+      </div>
+    </div>
+ </header>
+<body>
+<h1>HTML & CSS</h1>
+<h2> Достижения и навыки в использовании тегов HTML и стилизации CSS</h2>
+<h2>Теги HTML</h2>
+<p>
+Пройдя обучение второго занятия, были изучены материалы по использованию
+    тегов HTML и стилизации страницы через файл CSS. Для себя выделил такие
+    основные теги как:
+  <ul>
+    <li>&lt;html&gt; - контейнер для содержимого страницы; </li>
+    <li>&lt;head&gt; - содержит служебную информацию; </li>
+    <li>&lt;meta&gt; -  Определяет метаданные о HTML-документе</li>
+    <li>&lt;title&gt; -  Определяет заголовок для документа</li>
+    <li>&lt;link&gt; -  Определяет взаимосвязь между документом и внешним ресурсом</li>
+    <li>&lt;body&gt; - содержит контент - всё, что отображается в браузере;</li>
+    <li>&lt;h1&gt;-&lt;h6&gt; - Определяет заголовки HTML;</li>
+    <li>&lt;p&gt; - создаёт абзацы;</li>
+    <li>&lt;ul&gt; - создаёт неупорядоченный список;</li>
+    <li>&lt;li&gt; - добавляются элементы списка;</li>
+    <li>&lt;ol&gt; - создаёт упорядоченный список;</li>
+    <li>&lt;div&gt; - создаёт секцию в документе;</li>
+    <li>&lt;table&gt; - создаёт таблицу;</li>
+    <li>&lt;tr&gt; - определяет строку в таблице;</li>
+    <li>&lt;a&gt; - используется для создания ссылок;</li>
+    <li>&lt;button&gt; - создаёт кнопку.</li>
+  </ul>
+</p>
+<h2>Стилизация CSS</h2>
+<p>
+    В ходе обучения открыл для себя возможности файлов CSS.
+    Они мне показались интересными, удобными и мощными инструментами в плане стилизации HTML страниц.
+    Для себя выделил следующие возможности:
+</p>
+
+<p>
+    <ol>
+        <li>Color: устанавливает цвет текста элемента. </li>
+        <li>Font-family: устанавливает шрифт для текста элемента. </li>
+        <li>Font size: устанавливает размер текста элемента. </li>
+        <li>Background color: устанавливает цвет фона элемента </li>
+        <li>Width and height: устанавливает ширину и высоту элемента. </li>
+        <li>Text alignment: устанавливает выравнивание текста внутри элемента. </li>
+    </ol>
+</p>
+
+<p>
+В качестве шпаргалки, в свой блог включил ссылки на ресурсы раскрывающие темы HTML и CSS.
+</p>
+
+<div style="text-align: center;">
+    <table>
+        <tr>
+            <a href=https://www.w3schools.com/TAGS/default.asp>
+                <button>HTML элементы </button>
+            </a>
+        </tr>
+
+        <tr>
+            <a href="https://www.geeksforgeeks.org/html-tutorial/">
+                 <button>CSS Backgrounds</button>
+            </a>
+        </tr>
+    </table>
+</div>
+<h1> О дисциплинах </h1>
+
+<table>
+    <tr>
+        <th>Название дисциплин -></th>
+        <th>Основы языка програмирования</th>
+        <th>Система контроля Git</th>
+        <th>OC Linux</th>
+        <th>Алгоритмы и структуры данных</th>
+        <th>Базы данных</th>
+        <th>Расширенные возможности Python</th>
+        <th>Фреймворк Flask</th>
+        <th>Фреймворк Django</th>
+    </tr>
+    <tr>
+        <th>Процент выполнения темы -></th>
+        <td>0%</td>
+        <td>0%</td>
+        <td>0%</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th>Процент выполнения домашнего задания -></th>
+        <td>0%</td>
+        <td>0%</td>
+        <td>0%</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th>Комментарии к теме -></th>
+        <td>0%</td>
+        <td>0%</td>
+        <td>0%</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+</form>
+<!-- создаем таблицу -->
+<h3>Результаты</h3>
+<table border="1">
+    <tr>
+        <th>ID:</th>
+        <th>Заголовок записи:</th>
+         <th>Подзаголовок:</th>
+        <th>Текст записи: </th>
+    </tr>
+    {% for row in notes2 %}
+    <tr>
+        <td>{{ row.id }}</td>
+        <td>{{ row.title }}</td>
+        <td>{{ row.subtitle }}</td>
+        <td>{{ row.text }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+</body>
+</html>
